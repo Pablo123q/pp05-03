@@ -28,3 +28,4 @@ print(nwd_reku(120,21))
 # nwd_modulo_iteracyjne (reszta z dzielenia)
 # nwd_modulo_reku
 # i te wszystkie funkcje w petli jednej zrobic
+test_values = [ (315, 504), (1230, 528), (28, 8), (12, 18), (10000, 1) ]
