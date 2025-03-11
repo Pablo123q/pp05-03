@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(2000000)
+
 def nwd(a,b):
     while a!=b:
         if a>b:
@@ -48,6 +51,7 @@ def nwd_modulo_rekurencyjnie(a,b):
 
 
 
+
 # nwd_modulo_reku
 # i te wszystkie funkcje w petli jednej zrobic
 test_values = [ (315, 504), (1230, 528), (28, 8), (12, 18), (10000, 1) ]
@@ -59,9 +63,9 @@ for i in range(len(test_values)):
     print("to b",b)
 
     print("nwd iteracyjnie:",nwd(a,b))
-    print("nwd rekurencyjnie:",nwd(a,b))
-    print("nwd modulo iteracyjnie:",nwd(a,b))
-    print("nwd modulo rekurencyjnie:",nwd(a,b))
+    print("nwd rekurencyjnie:",nwd_reku(a,b))
+    print("nwd modulo iteracyjnie:",nwd_modulo_iteracyjnie(a,b))
+    print("nwd modulo rekurencyjnie:",nwd_modulo_rekurencyjnie(a,b))
 
 
 
